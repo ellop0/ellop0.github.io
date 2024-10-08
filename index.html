@@ -2,14 +2,18 @@
 <html>
 
   <head>
-    <title>Compass - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title id="cloakable">Compass - Home</title>
+    <link id="themeStylesheet" rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/newlogo.png">
+    <link id="cloak" rel="icon" type="image/png" href="images/newlogo.png">
+    <script src="load.js"></script>
     
   </head>
 
   <body>
+
+
+    </div>
     
     <audio autoplay loop>
       <source src="your-audio-file.mp3" type="audio/mpeg">
@@ -21,66 +25,9 @@
       audio.volume = 0.01;  // Set volume to a very low level
     </script>
 
-<script>
-  function cloakTitle() {
-    const title = document.getElementById('cloakable');
-    const favicon = document.getElementById('cloak');
-    const titleselect = document.getElementById('titleselect');
-    const status = localStorage.getItem('cloak');
-    console.log('Cloak function started');
-
     
-    if (status === 'google') {
-      console.log('Cloak status succesfully loaded');
-      console.log('Cloak succesfully loaded (GOOGLE)');
-      title.textContent="Google";
-      favicon.href="images/Tab cloaks/google-logo-hd.png"
-    } else if (status === 'youtube') {
-      console.log('Cloak status succesfully loaded');
-      console.log('Cloak succesfully loaded (YOUTUBE)');
-      title.textContent="Youtube";
-      favicon.href="images/Tab cloaks/yt2.png"
-      
-    } else if (status === 'newtab') {
-      console.log('Cloak status succesfully loaded');
-      console.log('Cloak succesfully loaded (NEWTAB)');
-      title.textContent="New Tab";
-      favicon.href="images/Tab cloaks/newtab.png"
-    } else {
-      console.log('No current cloak detected')
-    }
-      
-    
-  }
-  window.onload = function() {
-    cloakTitle();
-  }
 
 
-  
-</script>
-
-    <script>
-      function localtheme() {
-
-          const storedTheme = localStorage.getItem('theme');
-          const themeStylesheet = document.getElementById('themeStylesheet');
-
-          if (storedTheme === 'dark') {
-              themeStylesheet.href = 'themes/Midnight/style.css';
-          } else if (storedTheme === 'light') {
-            themeStylesheet.href = 'themes/Light/style.css';
-
-          } else {
-            themeStylesheet.href = 'css/style.css'; 
-          }
-      }
-
-
-      window.onload = function() {
-          localtheme();
-      };
-  </script>
     <div class="header">
     <div class="bg"></div>
       <div class="topnav"> 
@@ -93,29 +40,33 @@
       </div>
       
 
-      <h1 class="h1p">COMPASS</h1>
-      <h1 id="random-text" style="font-size: 36px;"></h1>
+      <h1 style="margin-top: 10%;">Welcome to compass</h1>
+      <h1 id="random-text" style="font-size: 30px;left: 0%;margin-bottom: 100px;"></h1>
       <script>
         const texts = 
         ["The best unblocked games website you could find.", 
         "Over 100+ games available to play for free. (clickbait)",
-        "WELCOME TO COMPASS", 
-        "Hello World.",
-        "Placeholder Text",
+        "Slogan changes every refresh", 
+        "Sergio was here",
+        "Created by Vander",
         "get doxxed ggez",
         "A NETWORK STRIVING TO BRING YOU ENTERTAINMENT.™️",
-        "Life gets hard but we're harder.™️",
+        "Life gets hard but we're harder. pause.™️",
         "Join our Community Discord Server",
         "stay real vros",
-        "Running out of ideas to put here.",
+        "Running out of ideas to put here. refresh?",
         "discord.gg/XbtGGvDN26",
-        "Support the USAF.",
+        "WELCOME TO COMPASS!",
         "Totally Dude.",
         "😂✌️",
-        "Settings will forever be W.I.P 💔"];
+        "Settings will be W.I.P"];
         const randomText = texts[Math.floor(Math.random() * texts.length)];
         document.getElementById("random-text").innerHTML = randomText;
       </script>
+
+<a href="games.html" class="play">Play</a>
+      
+
 
 
 
@@ -124,40 +75,40 @@
         <div class="stats-box">
           <img src="images/game.png">
           <div class="stats-title">
-            <center>92</center>
+            92
           </div>
           <div class="stats-desc">
-            <center>Games</center>
+            Games
           </div>
         </div>
 
         <div class="stats-box">
           <img src="images/users.png">
           <div class="stats-title">
-            <center>43K+</center>
+            43K+
           </div>
           <div class="stats-desc">
-            <center>Visits</center>
+            Visits
           </div>
         </div>
 
         <div class="stats-box">
             <img src="images/people.png">
           <div class="stats-title">
-            <center>4k+</center>
+            5k+
           </div>
           <div class="stats-desc">
-            <center>Users</center>
+            Users
           </div>
         </div>
 
         <div class="stats-box">
             <img src="images/dss.png">
           <div class="stats-title">
-            <center>136</center>
+            147
           </div>
           <div class="stats-desc">
-            <center>Discord Members</center>
+            Discord Members
           </div>
         </div>
 
@@ -174,6 +125,7 @@
       </div>
     </div>
     </div>
+    
 
     <footer>   
       <hr size="3" noshade color="#FFFFFF">       
