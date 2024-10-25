@@ -568,6 +568,12 @@
      "id": "game",
      "image": "images/fnaf2.webp"
    },
+  {
+    "title": "Territorial.io",
+     "link": "games/file.html",
+     "id": "game",
+     "image": "images/territorialio.png"
+   },
    {
     "title": "Dogeminer 2",
      "link": "games/Dogeminer2/",
